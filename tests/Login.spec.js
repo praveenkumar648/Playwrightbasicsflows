@@ -1,11 +1,13 @@
+import { test, expect } from '@playwright/test';
 
-import { Page } from '@playwright/test';
+test('OrangeHRM Login Test', async ({ page }) => {
 
-export async function Login(page){
-  await page.goto('/');
-  await page.getByPlaceholder("username").fill("Admin");
-  await page.getByRole('textbox',{name: "password"}).fill("admin123");
-  await page.getByRole('button',{name: "Login"}).click();
-}
+  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
+  await page.getByPlaceholder('Username').fill('Admin');
 
+  await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
+
+  await page.getByRole('button', { name: 'Login' }).click();
+
+});
