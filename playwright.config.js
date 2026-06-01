@@ -19,6 +19,8 @@ module.exports = defineConfig({
   // Number of workers
   workers: process.env.CI ? 1 : undefined,
 
+
+
   // Reporter configuration
   reporter: [
     ['html'],
@@ -33,6 +35,9 @@ baseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
 
 // Browser settings
 headless: false,
+launchOptions: {
+    slowMo: 1000
+  },
 
 
     // Screenshot settings
@@ -65,6 +70,7 @@ headless: false,
       use: {
         ...devices['Desktop Chrome'],
       },
+
     },
 
    // {
@@ -85,5 +91,6 @@ headless: false,
 
   // Folder for test artifacts
   outputDir: 'test-results/',
+
 
 });
