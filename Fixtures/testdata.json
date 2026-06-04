@@ -1,0 +1,16 @@
+{
+  "credentials": {
+    "username": "praveen.kumar@geekyants.com",
+    "password": "Geekyants123!"
+  },
+  "products": [
+    {
+      "name": "iPhone 15",
+      "quantity": 1
+    },
+    {
+      "name": "Sony headphones",
+      "quantity": 2
+    }
+  ]
+}
