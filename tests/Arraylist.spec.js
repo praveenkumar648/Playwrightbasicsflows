@@ -31,6 +31,6 @@ test('Amazon single product add to cart', async ({ page }) => {
   await page.click('#nav-cart');
 
   // Validate product in cart
-  await expect(page.getByRole('heading', { name: 'Shopping cart' })).toBeVisible();
+  await expect(page.locator("//span[@id='sc-buy-box-ptc-button']")).toBeVisible();
 
 });
