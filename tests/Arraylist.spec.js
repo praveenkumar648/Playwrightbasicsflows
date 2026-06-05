@@ -30,7 +30,7 @@ test('Amazon single product add to cart', async ({ page }) => {
   // Go to cart
   await page.click('#nav-cart');
 
-  // Validate product in cart
+  // Validate the Proceed to buy button
   await expect(page.locator("//span[@id='sc-buy-box-ptc-button']")).toBeVisible();
 
 });
