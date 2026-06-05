@@ -1,0 +1,279 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Arraylist.spec.js >> Amazon single product add to cart
+- Location: tests/Arraylist.spec.js:4:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]: Skip to main content
+  - banner [ref=e4]:
+    - navigation "Primary" [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - link "Amazon Business" [ref=e9] [cursor=pointer]:
+            - /url: /?ref_=abn_logo
+          - generic [ref=e12] [cursor=pointer]:
+            - generic:
+              - generic [ref=e14]: Delivering to Salem 636003
+              - generic [ref=e15]: Update location
+        - search [ref=e18]:
+          - generic [ref=e21]:
+            - generic [ref=e23]: All
+            - combobox "Select the department you want to search in" [ref=e25] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - generic [ref=e27]:
+            - generic [ref=e28]: Search Amazon Business
+            - textbox "Search Amazon Business" [ref=e29]
+          - generic "Go" [ref=e32] [cursor=pointer]:
+            - button "Go" [ref=e33]
+        - generic [ref=e35]:
+          - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e36] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+            - generic [ref=e38]: EN
+          - img [ref=e44] [cursor=pointer]
+          - link "Hello, Praveen Account for Your Business Name" [ref=e45] [cursor=pointer]:
+            - /url: https://www.amazon.in/gp/css/homepage.html?ref_=abn_bnav_youraccount_btn
+            - generic [ref=e46]: Hello, Praveen
+            - generic [ref=e48]: Account for Your Business Name
+          - link "Returns & Orders" [ref=e50] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=abn_yadd_ad_your_orders
+            - generic [ref=e51]: Returns
+            - generic [ref=e52]: "& Orders"
+          - link "3 items in cart" [ref=e53] [cursor=pointer]:
+            - /url: https://www.amazon.in/gp/cart/view.html?ref_=abn_tools_cart_nf
+            - generic [ref=e56]: "3"
+      - generic [ref=e57]:
+        - button "Open All Categories Menu" [ref=e59] [cursor=pointer]:
+          - generic [ref=e61]: All
+        - generic [ref=e64]:
+          - link "Buy Again" [ref=e65] [cursor=pointer]:
+            - /url: /gp/buyagain?ref_=abn_cs_pd_nav_b2b_reorder&pd_rd_r=bb25a460-d00d-4240-b6a9-600c7bab5fd3&pd_rd_w=IHHC4&pd_rd_wg=kiWOf
+          - link "Today’s Deals" [ref=e66] [cursor=pointer]:
+            - /url: /gp/goldbox?ref_=abn_cs_deals&pd_rd_r=bb25a460-d00d-4240-b6a9-600c7bab5fd3&pd_rd_w=FUeOT&pd_rd_wg=kiWOf
+          - link "Business Deals" [ref=e67] [cursor=pointer]:
+            - /url: /gp/browse.html?node=15423160031&ref_=abn_cs_businessdeals&pd_rd_r=bb25a460-d00d-4240-b6a9-600c7bab5fd3&pd_rd_w=ckXBh&pd_rd_wg=kiWOf
+          - link "Quantity Discounts" [ref=e68] [cursor=pointer]:
+            - /url: /gp/browse.html?node=15938996031&ref_=abn_cs_bd&pd_rd_r=bb25a460-d00d-4240-b6a9-600c7bab5fd3&pd_rd_w=RNZsm&pd_rd_wg=kiWOf
+          - link "Savings Hub" [ref=e69] [cursor=pointer]:
+            - /url: /gp/savingshub?ref_=abn_cs_d_sh&pd_rd_r=bb25a460-d00d-4240-b6a9-600c7bab5fd3&pd_rd_w=f3LX3&pd_rd_wg=kiWOf
+          - link "Add team" [ref=e70] [cursor=pointer]:
+            - /url: /bb/account/route/add-people?ref_=abn_cs_xshop_add_people&pd_rd_r=bb25a460-d00d-4240-b6a9-600c7bab5fd3&pd_rd_w=YvW2w&pd_rd_wg=kiWOf
+        - generic [ref=e72]:
+          - link "Deals like never before | Shop now" [ref=e74] [cursor=pointer]:
+            - /url: /b/?_encoding=UTF8&ie=UTF8&node=15423160031&ref_=ab_nav_swm_BBD&pf_rd_p=dd19e74c-4d27-490d-89c8-5c477c329f02&pf_rd_s=nav-sitewide-msg&pf_rd_t=93001&pf_rd_i=b2b-nav&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=C0AYNKXT7MH8RVFMSNVN
+          - link "Lists" [ref=e75] [cursor=pointer]:
+            - /url: /hz/wishlist/ls?ref_=abn_tools_business_lists
+            - generic [ref=e76]: Lists
+          - link "Join Prime" [ref=e78] [cursor=pointer]:
+            - /url: /amazonprime?ingressId=joinPrime_ingress&clientId=AB_Navigation&primeCampaignId=AB_Nav_Desktop&*entries*=0&*Version*=1&ref_=abn_tools_abingw_pc_yaddnavbar_hva_prime
+            - generic [ref=e79]: Join Prime
+  - main [ref=e83]:
+    - heading "All Carts" [level=1] [ref=e84]
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e91]:
+          - status [ref=e92]:
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - progressbar [ref=e98]
+                - generic [ref=e100]: ₹499
+              - generic [ref=e106]:
+                - text: Your order is eligible for FREE Delivery.
+                - generic [ref=e107]:
+                  - text: Choose
+                  - link "FREE Delivery" [ref=e108] [cursor=pointer]:
+                    - /url: /gp/help/customer/display.html?nodeId=200904360&pop-up=1
+                  - text: option at checkout.
+          - generic [ref=e109]:
+            - 'heading "Amazon Subtotal (3 items): ₹1,79,700.00 incl. GST" [level=3] [ref=e110]':
+              - generic [ref=e111]: Amazon
+              - generic [ref=e112]:
+                - text: "Subtotal (3 items):"
+                - generic [ref=e113]: ₹1,79,700.00 incl. GST
+            - generic [ref=e117]:
+              - checkbox "This order contains a gift" [ref=e118]
+              - generic [ref=e120]: This order contains a gift
+            - generic [ref=e124] [cursor=pointer]:
+              - button "Proceed to Buy Buy Amazon items" [ref=e125]: Proceed to checkout
+              - generic [ref=e128]: Proceed to Buy
+          - button "EMI Available" [ref=e133] [cursor=pointer]:
+            - heading "EMI Available" [level=5] [ref=e135]
+        - generic [ref=e146]:
+          - paragraph [ref=e147]: Enjoy faster deliveries, offers and so much more!
+          - paragraph [ref=e148]: Join Prime now for FREE deliveries, cancel anytime!
+          - generic [ref=e152] [cursor=pointer]:
+            - button "Join Prime Shopping Edition at ₹399/year" [ref=e153]
+            - generic [ref=e155]: Join Prime Shopping Edition at ₹399/year
+      - generic [ref=e156]:
+        - generic [ref=e158]:
+          - generic [ref=e162]:
+            - heading "Shopping Cart" [level=2] [ref=e164]
+            - list [ref=e166]:
+              - listitem [ref=e167]:
+                - generic [ref=e173] [cursor=pointer]:
+                  - button "Share items in cart" [ref=e174]
+                  - generic [ref=e175]: Share items in cart
+              - listitem [ref=e176]:
+                - generic [ref=e182] [cursor=pointer]:
+                  - button "Download as PDF" [ref=e183]
+                  - generic [ref=e184]: Download as PDF
+          - generic [ref=e187]:
+            - generic [ref=e191]: Price
+            - list "Shopping Cart" [ref=e192]:
+              - listitem [ref=e193]:
+                - generic [ref=e195]:
+                  - link [ref=e197] [cursor=pointer]:
+                    - /url: /gp/product/B0DXQH1DBS/ref=ox_sc_act_image_1?smid=AJ6SIZC8YQDZX&psc=1
+                  - generic [ref=e198]:
+                    - 'link "Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black" [ref=e200] [cursor=pointer]':
+                      - /url: /gp/product/B0DXQH1DBS/ref=ox_sc_act_title_1?smid=AJ6SIZC8YQDZX&psc=1
+                      - 'heading "Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black" [level=3] [ref=e202]':
+                        - generic [ref=e204]: "Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black"
+                    - generic [ref=e205]:
+                      - generic [ref=e208]: ₹50,762.71 (₹59,900.00 incl. GST)
+                      - generic [ref=e213]:
+                        - text: Up to 5% back with Amazon Pay ICICI card
+                        - link "Terms" [ref=e216] [cursor=pointer]:
+                          - /url: "#"
+                          - generic [ref=e217]: Terms
+                    - generic [ref=e218]:
+                      - generic [ref=e219]: In stock
+                      - generic [ref=e223]: FREE delivery Sun, 7 Jun available at checkout
+                      - paragraph [ref=e224]
+                      - generic [ref=e225]: "Colour: Black"
+                      - generic [ref=e226]: "Size: 128GB Storage"
+                    - generic [ref=e227]:
+                      - group "Quantity is 1" [ref=e230]:
+                        - generic [ref=e231]: Quantity is 1
+                        - generic [ref=e233]:
+                          - 'button "Delete Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e234] [cursor=pointer]'
+                          - generic [ref=e238]: "1"
+                          - generic [ref=e240]: "1"
+                          - 'button "Increase quantity by one Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e241] [cursor=pointer]'
+                      - 'button "Delete Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e245] [cursor=pointer]': Delete
+                      - 'button "Save for later Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e248] [cursor=pointer]': Save for later
+                      - 'link "Share Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&amp;Prime;) Super Retina XDR Display; Black" [ref=e251] [cursor=pointer]':
+                        - /url: "#"
+                        - text: Share
+              - listitem [ref=e252]:
+                - generic [ref=e254]:
+                  - link [ref=e256] [cursor=pointer]:
+                    - /url: /gp/product/B0DXQH1DBS/ref=ox_sc_act_image_2?smid=A34RBS7MAVZ4G4&psc=1
+                  - generic [ref=e257]:
+                    - 'link "Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black" [ref=e259] [cursor=pointer]':
+                      - /url: /gp/product/B0DXQH1DBS/ref=ox_sc_act_title_2?smid=A34RBS7MAVZ4G4&psc=1
+                      - 'heading "Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black" [level=3] [ref=e261]':
+                        - generic [ref=e263]: "Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black"
+                    - generic [ref=e264]:
+                      - generic [ref=e267]: ₹50,762.71 (₹59,900.00 incl. GST)
+                      - paragraph
+                      - link "Business Price" [ref=e270] [cursor=pointer]:
+                        - /url: "#"
+                      - paragraph
+                      - generic [ref=e275]:
+                        - text: Up to 5% back with Amazon Pay ICICI card
+                        - link "Terms" [ref=e278] [cursor=pointer]:
+                          - /url: "#"
+                          - generic [ref=e279]: Terms
+                    - generic [ref=e280]:
+                      - generic [ref=e281]: In stock
+                      - generic [ref=e285]: FREE delivery Sun, 7 Jun available at checkout
+                      - paragraph [ref=e286]
+                      - generic [ref=e287]: "Colour: Black"
+                      - generic [ref=e288]: "Size: 128GB Storage"
+                    - generic [ref=e289]:
+                      - group "Quantity is 2" [ref=e292]:
+                        - generic [ref=e293]: Quantity is 2
+                        - generic [ref=e295]:
+                          - 'button "Decrease quantity by one Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e296] [cursor=pointer]'
+                          - generic [ref=e300]: "2"
+                          - generic [ref=e302]: "2"
+                          - 'button "Increase quantity by one Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e303] [cursor=pointer]'
+                      - 'button "Delete Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e307] [cursor=pointer]': Delete
+                      - 'button "Save for later Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&Prime;) Super Retina XDR Display; Black" [ref=e310] [cursor=pointer]': Save for later
+                      - 'link "Share Apple iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1&amp;Prime;) Super Retina XDR Display; Black" [ref=e313] [cursor=pointer]':
+                        - /url: "#"
+                        - text: Share
+            - generic [ref=e315]:
+              - text: "Subtotal (3 items):"
+              - generic [ref=e316]: ₹1,79,700.00 incl. GST
+        - generic [ref=e318]:
+          - heading "Your Items" [level=3] [ref=e320]
+          - generic [ref=e321]:
+            - list [ref=e322]:
+              - listitem [ref=e323]:
+                - link "No items saved for later" [ref=e324] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e325]: No items saved for later
+              - listitem [ref=e326]:
+                - link "Buy it again" [ref=e327] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e328]: Buy it again
+              - listitem [ref=e329]:
+                - link "Lists" [ref=e330] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e331]: Lists
+            - generic "Buy it again" [ref=e332]:
+              - generic [ref=e335]: No items
+        - generic [ref=e336]:
+          - paragraph [ref=e338]: The price and availability of items at Amazon.in are subject to change. The shopping cart is a temporary place to store a list of your items and reflects each item's most recent price.
+          - paragraph [ref=e339]: Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.
+```

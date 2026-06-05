@@ -4,31 +4,30 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
 
-  // Test folder
-  testDir: './tests',
+// Test folder
+testDir: './tests',
 
-  // Parallel execution
-  fullyParallel: true,
+// Parallel execution
+fullyParallel: true,
 
-  // Fail the build if test.only is left accidentally
-  forbidOnly: !!process.env.CI,
+// Fail the build if test.only is left accidentally
+forbidOnly: !!process.env.CI,
 
-  // Retry on CI only
-  retries: process.env.CI ? 2 : 0,
+// Retry on CI only
+retries: process.env.CI ? 2 : 0,
 
-  // Number of workers
-  workers: process.env.CI ? 1 : undefined,
+// Number of workers
+workers: process.env.CI ? 1 : undefined,
 
 
 
-  // Reporter configuration
-  reporter: [
-    ['html'],
-    ['list']
-  ],
+// Reporter configuration
+reporter: [
+['allure-playwright']
+],
 
-  // Shared settings for all projects
-  use: {
+// Shared settings for all projects
+use: {
 
 // Base URL
 baseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
@@ -40,57 +39,54 @@ launchOptions: {
   },
 
 
-    // Screenshot settings
-    screenshot: 'only-on-failure',
+// Screenshot settings
+screenshot: 'only-on-failure',
 
-    // Video recording
-    video: 'retain-on-failure',
+// Video recording
+video: 'retain-on-failure',
 
-    // Trace for debugging
-    trace: 'on-first-retry',
+// Trace for debugging
+trace: 'on-first-retry',
 
-    // Browser viewport
-    viewport: { width: 1440, height: 900 },
+// Browser viewport
+viewport: { width: 1440, height: 900 },
 
-    // Ignore HTTPS errors
-    ignoreHTTPSErrors: true,
+// Ignore HTTPS errors
+ignoreHTTPSErrors: true,
 
-    // Action timeout
-    actionTimeout: 60000,
+// Action timeout
+actionTimeout: 60000,
 
-    // Navigation timeout
-    navigationTimeout: 60000,
-  },
+// Navigation timeout
+navigationTimeout: 60000,
+},
 
-  // Browser projects
-  projects: [
+// Browser projects
+projects: [
 
-    {
-      name: 'Chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-      },
+{
+  name: 'Chromium',
+  use: {
+...devices['Desktop Chrome'],
+},
+},
+// {
+// name: 'Firefox',
+//use: {
+// ...devices['Desktop Firefox'],
+//},//},
 
-    },
-
-   // {
-     // name: 'Firefox',
-      //use: {
-       // ...devices['Desktop Firefox'],
-      //},
-    //},
-
-    //{
-     /* name: 'Webkit',
+//{
+/* name: 'Webkit',
       use: {
         ...devices['Desktop Safari'],
       },
     },*/
 
-  ],
+],
 
-  // Folder for test artifacts
-  outputDir: 'test-results/',
+// Folder for test artifacts
+outputDir: 'test-results/',
 
 
 });
